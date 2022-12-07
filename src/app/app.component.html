@@ -1,45 +1,52 @@
 <div class="left">
-
+    <img src="assets\images\bateau.jpg" alt="image">
 </div>
 
 <div class="right">
     <div class="top">
         <div class="icon">
-            <img src="" alt="">
-            <p>UI Unicorn</p>
+            <img src="assets/logos/Avatar-UI-Unicorn-V2.png" alt="logo" class="logo">
+            <img src="assets/logos/UI-Unicorn.svg" alt="UI-Unicorn">
         </div>
-        <div class="form">
+        <div class="signin">
             <P>Nice to see you again</P>
-            <form action="POST">
-                <label for="login">Login</label>
-                <input type="text" id="login">
-
-                <label for="password">Password</label>
-                <input type="text" id="password">
-
-                <div class="rememberme">
-                    <input type="checkbok" id="rememberme">
-                    <label for="rememberme">remember me</label>
+            <form action="POST" class="form">
+                <div class="login">
+                    <label for="login" class="login">Login</label>
+                    <input type="text" id="login" placeholder="Email or phone number">
                 </div>
-                <div class="forgetpassword">
-                    <p>forgot password?</p>
+                <div class="password">
+                    <label for="password" class="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+
+                </div>
+                <div class="rememberForget">
+                    <div class="rememberme">
+
+                        <label class="switch">
+                            <input type="checkbox" class="inp" id="rememberme">
+                            <span class="slider round"></span>
+                        </label>
+                        <label for="rememberme" class="remember-text"> Remember me</label>
+
+                    </div>
+                    <div class="forgetpassword">
+                        <a routerLink="forgetpw">forgot password?</a>
+                    </div>
                 </div>
                 <button type="submit" class="btn">Sign in</button>
             </form>
         </div>
 
-        <hr>
+        <div class="line">
 
-        <div class="googlesignin">
-            <button>Or sign in with Google</button>
         </div>
+        <a routerLink="/google-signiin" class="googleLink">
+            <img src="assets/logos/Other-Pay-Method.png" alt="google-icon"> <span>Or sign in with Google</span>
+        </a>
 
         <div class="noaccount">
-            <span>Dont have an account?</span><a href="">Sign up now</a>
+            <span>Dont have an account?</span><a routerLink="/signup">Sign up now</a>
         </div>
-    </div>
-
-    <div class="bottom">
-
     </div>
 </div>

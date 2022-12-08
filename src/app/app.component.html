@@ -11,6 +11,10 @@
         <div class="signin">
             <P>Nice to see you again</P>
             <form action="POST" class="form">
+                
+
+                <!-- <app-input></app-input> -->
+                
                 <div class="login">
                     <label for="login" class="login">Login</label>
                     <input type="text" id="login" placeholder="Email or phone number">
@@ -18,8 +22,8 @@
                 <div class="password">
                     <label for="password" class="password">Password</label>
                     <input type="password" id="password" placeholder="Enter password">
-
                 </div>
+
                 <div class="rememberForget">
                     <div class="rememberme">
 
@@ -41,9 +45,8 @@
         <div class="line">
 
         </div>
-        <a routerLink="/google-signiin" class="googleLink">
-            <img src="assets/logos/Other-Pay-Method.png" alt="google-icon"> <span>Or sign in with Google</span>
-        </a>
+        
+        <app-button></app-button>
 
         <div class="noaccount">
             <span>Dont have an account?</span><a routerLink="/signup">Sign up now</a>

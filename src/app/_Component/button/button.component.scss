@@ -1,0 +1,36 @@
+/* .btn{
+    height: 40px;
+    margin-top:16px;
+    background-color: #007AFF;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: center;
+} */
+
+.googleLink{
+    display: flex;
+    background-color: #333333;
+    height:40px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 6px;
+    font-family: SF-Pro-Display-Light;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: center;
+
+    img, span{
+        font-family: SF-Pro-Display-Light;
+        align-self: center;
+        padding-right: 8px;
+    }
+}

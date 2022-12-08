@@ -15,14 +15,14 @@ import { MessageErrorComponent } from './_Component/message-error/message-error.
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    GoogleSigninComponent,
     ButtonComponent,
     CheckboxComponent,
     InputComponent,
+    MessageErrorComponent,
+    LoginComponent,
+    GoogleSigninComponent,
     ForgetpwComponent,
-    SignupComponent,
-    MessageErrorComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,

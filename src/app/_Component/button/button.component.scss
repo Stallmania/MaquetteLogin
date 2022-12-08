@@ -11,11 +11,19 @@
     line-height: 20px;
     letter-spacing: 0.30000001192092896px;
     text-align: center;
-} */
+}  */
 
-.googleLink{
+button{
+    &.primary
+    {
+        background-color: #1d09ce;
+    }
+    &.secondary
+    {
+        background-color: #333333;
+    }
     display: flex;
-    background-color: #333333;
+
     height:40px;
     color: white;
     text-decoration: none;

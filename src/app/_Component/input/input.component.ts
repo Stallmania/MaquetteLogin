@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -6,19 +6,29 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
-  email: string = '';
-  @Input() label!: string;
-  errorMessage : string = ""
+  @Input() inputLabel: String='Login';
+  @Input() type: String ='text' ;
+  @Input() placeholderr: String ='Email or phone number';
 
-  validateEmail(email:string) {
-    this.email = "";
 
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      this.errorMessage = "E-mail incorrect";
-    }
-  }
-  
-  sendMail() {
-  this.errorMessage = "saisie incorect !";
+  constructor(){}
+
+  ngOnInit():void{
+
   }
 }
+
+
+/* errorMessage : string = ""
+
+validateEmail(email:string) {
+  this.email = "";
+
+  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    this.errorMessage = "E-mail incorrect";
+  }
+}
+
+sendMail() {
+this.errorMessage = "saisie incorect !";
+} */

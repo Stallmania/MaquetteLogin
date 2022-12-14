@@ -7,21 +7,31 @@ import { LoginComponent } from './_Pages/login/login.component';
 
 const routes: Routes = [
   {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'google-signiin',
-    component: GoogleSigninComponent
-  },
-  {
-    path: 'forgetpw',
-    component: ForgetpwComponent
-  },
-  {
-    path: 'signup',
-    component: SignupComponent
-  },
+    path: '',
+    component: LoginComponent,
+    children:[
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: 'google-signiin',
+        component: GoogleSigninComponent
+      },
+      {
+        path: 'forgetpw',
+        component: ForgetpwComponent
+      },
+      {
+        path: 'signup',
+        component: SignupComponent
+      },
+      {
+        path: 'signup',
+        component: SignupComponent
+      },
+    ]
+  }
 ];
 
 @NgModule({

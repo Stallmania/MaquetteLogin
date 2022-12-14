@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() name!:String;
   @Input() color!:String;
+  @Input() googleicon!:String;
 }

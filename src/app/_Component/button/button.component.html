@@ -1,5 +1,5 @@
-<!-- <button type="submit" class="btn">Sign in</button> -->
+    <button routerLink="/google-signiin" [class]="color">
+        <img [src]=googleicon *ngIf="googleicon">
+        <span>{{name}}</span>
+    </button>
 
-<button routerLink="/google-signiin" [class]="color">
-    <img src="assets/logos/Other-Pay-Method.png" alt="google-icon"> <span>{{name}}</span>
-</button>

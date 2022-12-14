@@ -1,0 +1,21 @@
+div{
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 8px;
+    font-family: SF-Pro-Display-Light;
+    label{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: small;
+    }
+    input{
+        line-height:48px;
+        border-radius: 6px;
+        background-color: #f2f2f2;
+        text-indent: 10px;
+        border:0;
+        margin-bottom: 16px;
+        font-family:"Roboto";
+        font-weight: 400;
+    }
+}

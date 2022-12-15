@@ -1,4 +1,4 @@
 <div>
     <label>{{inputLabel}}</label>
-    <input type={{type}} placeholder={{placeholderr}}>
+    <input type={{type}} placeholder={{placeholderr}} #inputRef (change)="values.emit(inputRef.value)">
 </div>

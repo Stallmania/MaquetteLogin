@@ -1,0 +1,125 @@
+.signin{
+    display: flex;
+    flex-direction:column;
+    p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: -2px;
+        font-size: 30px;
+        color: #1A1A1A;
+    }
+    .form{
+        display: flex;
+        flex-direction:column;
+        app-input{
+            display: flex;
+            flex-direction:inherit;
+            margin-bottom: 8px;
+            font-family: SF-Pro-Display-Light;
+        }
+        .rememberForget{
+            margin-top: 4px;
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            .rememberme{
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 40px;
+                    height: 20px;
+                }
+                .switch .inp { 
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #f2f2f2;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 18px;
+                    width: 18px;
+                    left: 0px;
+                    bottom: 1px;
+                    background-color: white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+                .inp:checked + .slider {
+                    background-color: #2196F3;
+                }
+                .inp:focus + .slider {
+                    box-shadow: 0 0 1px #2196F3;
+                }
+                .inp:checked + .slider:before {
+                    -webkit-transform: translateX(26px);
+                    -ms-transform: translateX(26px);
+                    transform: translateX(26px);
+                }
+                  /* Rounded sliders */
+                .slider.round {
+                    border-radius: 34px;
+                }
+                .slider.round:before {
+                    border-radius: 50%;
+                }
+
+                .remember-text{
+                    font-family: SF-Pro-Display-Light;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-align: left;
+                    margin-left: 8px;
+                }
+            }
+            .forgetpassword{
+                a{
+                    text-decoration: none;
+                    color: #007AFF;
+                    font-family: SF-Pro-Display-Light;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-align: left;
+                }
+            }
+        }
+        app-button{
+            display : "block";
+        }
+    }
+}
+.line{
+    display: flex;
+    background-color: #E5E5E5;
+    height: 1px;
+    margin: 32px 0;
+}
+.noaccount{
+    font-family: SF-Pro-Display-Light;
+    display: flex;
+    margin-top: 24px;
+    justify-content:center;
+    span{
+        margin-right: 8px;
+    }
+    a{
+        text-decoration: none;
+        color: #007AFF;
+        ;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -6,16 +6,18 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
-  @Input() inputLabel: String='Login';
-  @Input() type: String ='text' ;
-  @Input() placeholderr: String ='Email or phone number';
+  @Input() inputLabel: String = 'Login';//ce n'ai pas par default !
+  @Input() placeholderr: String = 'Email or phone number';//ce n'ai pas par default !
+  @Input() type: String = 'text';
+  @Output() values: EventEmitter<string> = new EventEmitter<string>();
 
 
-  constructor(){}
+  constructor() { }
 
-  ngOnInit():void{
+  ngOnInit(): void {
 
   }
+
 }
 
 

@@ -17,10 +17,7 @@ export class InputComponent {
   ngOnInit(): void {
 
   }
-
 }
-
-
 /* errorMessage : string = ""
 
 validateEmail(email:string) {

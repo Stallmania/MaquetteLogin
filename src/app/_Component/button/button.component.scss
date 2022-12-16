@@ -18,6 +18,10 @@ button{
         align-self: center;
         padding-right: 8px;
     }
+    &:hover{
+        cursor: pointer;
+    }
+
     &.primary
     {
         background-color: #007AFF;

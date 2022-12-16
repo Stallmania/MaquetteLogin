@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class LoginComponent {
 
   recuperValeur(valeur: string) {
-    alert(valeur)
+    alert("@Output() j'ai saisi : "+valeur)
   }
 }

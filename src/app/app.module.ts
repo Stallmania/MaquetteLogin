@@ -11,6 +11,7 @@ import { InputComponent } from './_Component/input/input.component';
 import { ForgetpwComponent } from './_Pages/forgetpw/forgetpw.component';
 import { SignupComponent } from './_Pages/signup/signup.component';
 import { MessageErrorComponent } from './_Component/message-error/message-error.component';
+import { ConnectedComponent } from './_Pages/connected/connected.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MessageErrorComponent } from './_Component/message-error/message-error.
     LoginComponent,
     GoogleSigninComponent,
     ForgetpwComponent,
-    SignupComponent
+    SignupComponent,
+    ConnectedComponent
   ],
   imports: [
     BrowserModule,

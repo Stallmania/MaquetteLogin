@@ -32,6 +32,7 @@ export class SignupComponent implements OnInit {
         Validators.maxLength(10),
       ]],
       phones: this.formBuilder.array([]),
+
       terms: ['', [
         Validators.requiredTrue
       ]]
@@ -73,13 +74,20 @@ export class SignupComponent implements OnInit {
     return this.registerForm.get('password') as FormControl;
   }
 
-  get phonePrefix() {
-    return this.registerForm.get('phone') as FormArray;
-  }
+
 
   get phones() {
     return this.registerForm.get('phones') as FormArray;
   }
+
+  getPhoneNumber(index:number){
+    return this.phones.controls[index].get('phoneNumber');
+  }
+  
+  getPhonePrefix(index:number){
+    return this.phones.controls[index].get('phonePrefix');
+  }
+
 
   get terms() {
     return this.registerForm.get('terms') as FormControl;

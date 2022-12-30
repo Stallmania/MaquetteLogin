@@ -41,7 +41,7 @@
                         <option value="66">+66</option>
                     </select>
                     <input type="phone" name="phone" formControlName="phoneNumber" placeholder="812345678">
-                    <span class="remove" (click)="deletePhone(i)" *ngIf="!first">- Remove</span>
+                    <span class="remove" (click)="deletePhone(i)" *ngIf="!first">Remove</span>
                 </div>
                 <div class="error" *ngIf="getPhonePrefix(i)?.touched && getPhonePrefix(i)?.errors">Invalid Prefix</div>
 

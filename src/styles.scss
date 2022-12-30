@@ -11,14 +11,3 @@ html,body{
     margin: 0;
     padding: 0;
 }
-
-app-root {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
-    
-    @media (max-width: 1000px) {
-        display: grid;
-        grid-template-columns: 0fr 1fr;
-    }
-}

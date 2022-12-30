@@ -1,0 +1,14 @@
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .top{
+        display: flex;
+        flex-direction: column;
+        .icon{
+            display: flex;
+            flex-direction:row;
+            .logo{margin-right: 10px;}
+        }
+    }
+}

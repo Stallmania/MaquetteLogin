@@ -1,27 +1,11 @@
-<div class="signin">
-    <P>Nice to see you again</P>
-    <form class="form">
-        <app-input (values)="recuperValeur($event)"></app-input>
-        <app-input inputLabel="Password" type="password" placeholderr="Enter password"></app-input>
-        <div class="rememberForget">
-            <div class="rememberme">
-
-                <label class="switch">
-                    <input type="checkbox" class="inp" id="rememberme">
-                    <span class="slider round"></span>
-                </label>
-                <label for="rememberme" class="remember-text"> Remember me</label>
-            </div>
-            <div class="forgetpassword">
-                <a routerLink="/forget_password">forgot password?</a>
-            </div>
+<div class="page">
+    <app-container></app-container>
+    <div class="container-right">
+        <div class="top">
+            <app-logo></app-logo>
         </div>
-        <app-button name="Sign in" color="primary" routerLink="/connected"></app-button>
-    </form>
-</div>
-<div class="line"></div>
-<app-button name="Or sign in with Google" googleicon="assets/logos/Other-Pay-Method.png"
-    color="secondary"></app-button>
-<div class="noaccount">
-    <span>Dont have an account?</span><a routerLink="/signup">Sign up now</a>
+        <div class="field">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>

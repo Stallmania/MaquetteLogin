@@ -12,6 +12,11 @@ import { SignupComponent } from './_Pages/signup/signup.component';
 import { ConnectedComponent } from './_Pages/connected/connected.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './_Component/_OctomComponent/header/header.component';
+import { SidebarComponent } from './_Component/_OctomComponent/sidebar/sidebar.component';
+import { ContainerComponent } from './_Component/container/container.component';
+import { LogoComponent } from './_Component/logo/logo.component';
+import { SigninComponent } from './_Component/signin/signin.component';
 
 
 
@@ -28,6 +33,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     ForgetpwComponent,
     SignupComponent,
     ConnectedComponent,
+    HeaderComponent,
+    SidebarComponent,
+    ContainerComponent,
+    LogoComponent,
+    SigninComponent,
 
 
   ],

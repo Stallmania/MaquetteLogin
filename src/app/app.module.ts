@@ -17,6 +17,9 @@ import { SidebarComponent } from './_Component/_OctomComponent/sidebar/sidebar.c
 import { ContainerComponent } from './_Component/container/container.component';
 import { LogoComponent } from './_Component/logo/logo.component';
 import { SigninComponent } from './_Component/signin/signin.component';
+import { MessagesComponent } from './_Component/_OctomComponent/messages/messages.component';
+import { ProfileComponent } from './_Component/_OctomComponent/profile/profile.component';
+import { FieldComponent } from './_Component/_OctomComponent/field/field.component';
 
 
 
@@ -38,6 +41,9 @@ import { SigninComponent } from './_Component/signin/signin.component';
     ContainerComponent,
     LogoComponent,
     SigninComponent,
+    MessagesComponent,
+    ProfileComponent,
+    FieldComponent,
 
 
   ],

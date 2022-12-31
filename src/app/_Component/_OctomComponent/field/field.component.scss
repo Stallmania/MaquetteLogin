@@ -1,0 +1,18 @@
+div{
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 8px;
+    width: 300px;
+    font-family: SF-Pro-Display-Light;
+    input{
+        line-height:48px;
+        border-radius: 6px;
+        background-color: #050505;
+        color: #a1a2a4;
+        text-indent: 10px;
+        border:0;
+        margin-bottom: 16px;
+        font-family:"Roboto";
+        font-weight: 400;
+    }
+}

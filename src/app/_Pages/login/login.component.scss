@@ -5,10 +5,13 @@
         display: grid;
         grid-template-columns: 0fr 1fr;
     }
-    .up{
-        margin: 48px;
-    }
-    .down{
-        margin: 0 48px;
+    .container-right{
+        transition-duration: 0.5s;
+        .up{
+            margin: 48px;
+        }
+        .down{
+            margin: 0 48px;
+        }
     }
 }

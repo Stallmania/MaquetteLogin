@@ -4,11 +4,20 @@
     justify-content: space-between;
     .top{
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         .icon{
             display: flex;
             flex-direction:row;
             .logo{margin-right: 10px;}
+            .logooctom{height: 49px;}
+        }
+        .switchmode{
+            display: flex;
+            input, span{
+                align-self: center;
+                font-size: 15px;
+                font-weight: 600;
+            }
         }
     }
 }

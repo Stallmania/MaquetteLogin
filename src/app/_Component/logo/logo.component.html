@@ -1,8 +1,16 @@
 <div class="right">
     <div class="top">
-        <div class="icon">
+        <div class="icon" *ngIf="show; else OctomLogo">
             <img src="assets/logos/Avatar-UI-Unicorn-V2.png" alt="logo" class="logo">
             <img src="assets/logos/UI-Unicorn.svg" alt="UI-Unicorn">
+        </div>
+        <ng-template #OctomLogo>
+            <div class="icon">
+                <img src="assets\logos\logo.png" class="logooctom">
+            </div>
+        </ng-template>
+        <div class="switchmode">
+            <input type="checkbox" (click)="toggle()" #checkboxref (click)="envoi.emit(checkboxref.checked)"><span>Switch to Octom mode</span>
         </div>
     </div>
 </div>

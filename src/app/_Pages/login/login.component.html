@@ -1,8 +1,8 @@
 <div class="page">
     <app-container></app-container>
-    <div class="container-right">
+    <div class="container-right" [style.background-color]="backcolor" [style.color]=foncolor>
         <div class="up">
-            <app-logo></app-logo>
+            <app-logo (envoi)="recuper($event)"></app-logo>
         </div>
         <div class="down">
             <router-outlet></router-outlet>

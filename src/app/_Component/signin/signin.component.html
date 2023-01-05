@@ -1,8 +1,11 @@
 <div class="signin">
     <P>Nice to see you again</P>
-    <form class="form">
-        <app-input (patat)="recuperValeur($event)"></app-input>
+    <!-- <form class="form"> -->
+    <form class="form" [formGroup]="loginForm" (ngSubmit)="auth()">
+        <app-input ></app-input>
         <app-input inputLabel="Password" type="password" placeholderr="Enter password"></app-input>
+<!--         <input type="text" formControlName="username" placeholder="Enter Username">
+        <input type="password" formControlName="password" placeholder="Enter Password"> -->
         <div class="rememberForget">
             <div class="rememberme">
                 <label class="switch">
@@ -16,6 +19,8 @@
             </div>
         </div>
         <app-button name="Sign in" color="primary" routerLink="/connected"></app-button>
+
+            <!-- <button type="submit" class="btn primary"><span>Sign in</span></button> -->
     </form>
 </div>
 <div class="line"></div>

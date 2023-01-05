@@ -3,9 +3,15 @@
         <p>Messages</p>
     </div>
     <app-field></app-field>
-    <app-profile></app-profile>
-    <app-profile></app-profile>
-    <app-profile></app-profile>
-    <app-profile></app-profile>
-    <app-profile></app-profile>
+
+    <!--     <div class="container" *ngIf="user">
+        <div class="image-product">
+            <img [src]="user.image" [alt]="user.firstName">
+        </div>
+        <div class="image-infos">
+            <h2>{{ user.firstName }}</h2>
+        </div>
+    </div> -->
+
+    <app-profile [image]="user.image" [name]="user.firstName"></app-profile>
 </div>

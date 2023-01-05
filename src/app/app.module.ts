@@ -20,6 +20,7 @@ import { SigninComponent } from './_Component/signin/signin.component';
 import { MessagesComponent } from './_Component/_OctomComponent/messages/messages.component';
 import { ProfileComponent } from './_Component/_OctomComponent/profile/profile.component';
 import { FieldComponent } from './_Component/_OctomComponent/field/field.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -50,7 +51,9 @@ import { FieldComponent } from './_Component/_OctomComponent/field/field.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
